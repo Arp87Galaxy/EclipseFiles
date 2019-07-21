@@ -1,0 +1,8 @@
+package com.atguigu.atcrowdfunding.manager.dao;
+
+import com.atguigu.atcrowdfunding.bean.TManager;
+
+public interface TestDao {
+	@Select("select * from t_manager")
+	public TManager query();
+}

@@ -1,0 +1,8 @@
+jdbc.user=root
+jdbc.password=root
+jdbc.url=jdbc:mysql://localhost:3306/atcrowdfundingtest
+jdbc.driver=com.mysql.jdbc.Driver
+jdbc.driver=com.mysql.cj.jdbc.Driver
+jdbc.url=jdbc:mysql://localhost:3306/atcrowdfundingtest?useSSL=false&useUnicode=true&characterEncoding=UTF8&serverTimezone=GMT
+jdbc.username=root
+jdbc.password=111@tesT

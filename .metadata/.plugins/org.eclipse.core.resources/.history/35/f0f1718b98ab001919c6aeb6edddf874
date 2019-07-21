@@ -1,0 +1,13 @@
+package com.atguigu.atcrowdfunding.manager.service.impl;
+
+import com.atguigu.atcrowdfunding.manager.service.TestService;
+
+public class TestServiceImpl implements TestService {
+
+	@Override
+	public void query() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

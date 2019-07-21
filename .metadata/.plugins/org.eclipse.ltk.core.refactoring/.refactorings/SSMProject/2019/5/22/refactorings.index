@@ -1,0 +1,15 @@
+1559217719358	Delete element
+1559219019657	Delete element
+1559219021980	Move 'applicationContext.xml' to 'resources'
+1559219467219	Delete element
+1559229498044	Delete element
+1559230126844	Move 'Mapper.xml' to 'mapper'
+1559232807286	Move 'com' to 'src'
+1559232864074	Move 'com' to 'resources'
+1559232964803	Move 'com' to 'src'
+1559233028598	Delete element
+1559233087831	Delete element
+1559233163205	Delete element
+1559233762838	Rename package 'com.ah.services'
+1559234545414	Rename type 'Dept'
+1559234638373	Rename resource 'Dept.xml'

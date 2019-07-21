@@ -1,0 +1,10 @@
+package com.atguigu.atcrowdfunding.manager.dao;
+
+import java.util.Map;
+
+import org.apache.ibatis.annotations.Insert;
+
+public interface TestDao {
+	@Insert("insert into t_user (name ) values (#{name} )")
+	public void insert(Map map);
+}

@@ -1,0 +1,27 @@
+package com.ah.service;
+
+import org.apache.logging.log4j.core.Logger;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.ah.pojo.Dept;
+
+public class logBeforeTest {
+	static Logger log = Logger
+	private Dept dept;
+	public Dept getDept() {
+		return dept;
+	}
+	public void setDept(Dept dept) {
+		this.dept = dept;
+	}
+	public void test() {
+		System.out.println(this.dept.getDeptName());
+	}
+	public static void main(String[] args) {
+		ApplicationContext ct= new ClassPathXmlApplicationContext("applicationContext.xml");
+		logBeforeTest lbt = ct.getBean("logBeforeTest",logBeforeTest.class);
+		
+		lbt.test();
+	}
+}

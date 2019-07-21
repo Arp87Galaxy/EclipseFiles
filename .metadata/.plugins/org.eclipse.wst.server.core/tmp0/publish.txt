@@ -1,0 +1,10 @@
+#Tomcat publish data
+#Sun Jul 21 19:37:03 CST 2019
+org.eclipse.jst.j2ee.server\:Atcrowdfunding-potal-impl=D\:\\\u7F16\u7A0BTools\\apache-tomcat-8.5.38\\webapps\\Atcrowdfunding-main\\WEB-INF\\lib\\Atcrowdfunding-potal-impl-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.jee.server\:Atcrowdfunding-main=D\:\\\u7F16\u7A0BTools\\apache-tomcat-8.5.38\\webapps\\Atcrowdfunding-main
+org.eclipse.jst.j2ee.server\:Atcrowdfunding-bean=D\:\\\u7F16\u7A0BTools\\apache-tomcat-8.5.38\\webapps\\Atcrowdfunding-main\\WEB-INF\\lib\\Atcrowdfunding-bean-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.j2ee.server\:Atcrowdfunding-common=D\:\\\u7F16\u7A0BTools\\apache-tomcat-8.5.38\\webapps\\Atcrowdfunding-main\\WEB-INF\\lib\\Atcrowdfunding-common-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.jee.server\:/binary\:F\:\\reposi\\org\\springframework\\spring-web\\4.0.0.RELEASE\\spring-web-4.0.0.RELEASE.jar=D\:\\\u7F16\u7A0BTools\\apache-tomcat-8.5.38\\webapps\\Atcrowdfunding-main\\WEB-INF\\lib\\spring-web-4.0.0.RELEASE.jar
+org.eclipse.jst.j2ee.server\:Atcrowdfunding-potal-api=D\:\\\u7F16\u7A0BTools\\apache-tomcat-8.5.38\\webapps\\Atcrowdfunding-main\\WEB-INF\\lib\\Atcrowdfunding-potal-api-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.j2ee.server\:Atcrowdfunding-manager-api=D\:\\\u7F16\u7A0BTools\\apache-tomcat-8.5.38\\webapps\\Atcrowdfunding-main\\WEB-INF\\lib\\Atcrowdfunding-manager-api-0.0.1-SNAPSHOT.jar
+org.eclipse.jst.j2ee.server\:Atcrowdfunding-manager-impl=D\:\\\u7F16\u7A0BTools\\apache-tomcat-8.5.38\\webapps\\Atcrowdfunding-main\\WEB-INF\\lib\\Atcrowdfunding-manager-impl-0.0.1-SNAPSHOT.jar

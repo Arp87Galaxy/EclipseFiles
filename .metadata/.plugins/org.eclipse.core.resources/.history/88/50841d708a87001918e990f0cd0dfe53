@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <!-- 引入 echarts.js -->
+    <script src="echarts.js"></script>
+</head>
+<body>
+    <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
+    <div id="main1" style="width: 600px;height:400px;"></div>
+     <div id="main2" style="width: 600px;height:400px;"></div>
+    <script type="text/javascript">
+        // 基于准备好的dom，初始化echarts实例
+     // 引入提示框和标题组件
+        var myChart1 = echarts.init(document.getElementById('main1'));
+        var myChart2 = echarts.init(document.getElementById('main2'));
+        // 指定图表的配置项和数据
+        var option = {
+            title: {
+                text: 'ECharts 入门示例'
+            },
+            toolbox: {show:true,
+            	feature:{
+            	    mark : {
+            	        show : false,
+            	        title : {
+            	            mark : '辅助线开关',
+            	            markUndo : '删除辅助线',
+            	            markClear : '清空辅助线'
+            	        },
+            	        lineStyle : {
+            	            width : 2,
+            	            color : '#1e90ff',
+            	            type : 'dashed'
+            	        }
+            	    },
+            	    dataZoom : {
+            	        show : false,
+            	        title : {
+            	            dataZoom : '区域缩放',
+            	            dataZoomReset : '区域缩放后退'
+            	        }
+            	    },
+            	    dataView : {
+            	        show : false,
+            	        title : '数据视图',
+            	        readOnly: false,
+            	        lang: ['数据视图', '关闭', '刷新']
+            	    },
+            	    magicType: {
+            	        show : false,
+            	        title : {
+            	            line : '折线图切换',
+            	            bar : '柱形图切换',
+            	            stack : '堆积',
+            	            tiled : '平铺',
+            	            force: '力导向布局图切换',
+            	            chord: '和弦图切换',
+            	            pie: '饼图切换',
+            	            funnel: '漏斗图切换'
+            	        },
+            	        option: {
+            	            // line: {...},
+            	            // bar: {...},
+            	            // stack: {...},
+            	            // tiled: {...},
+            	            // force: {...},
+            	            // chord: {...},
+            	            // pie: {...},
+            	            // funnel: {...}
+            	        },
+            	        type : []
+            	    },
+            	    restore : {
+            	        show : false,
+            	        title : '还原'
+            	    },
+            	    saveAsImage : {
+            	        show : false,
+            	        title : '保存为图片',
+            	        type : 'png',
+            	        lang : ['点击保存']
+            	    }
+            	}
+            	},
+            tooltip: {show:true},
+            legend: {
+                data:['销量']
+            },
+            xAxis: {
+                data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+            },
+            yAxis: {},
+            series: [{
+                name: '销量',
+                type: 'bar',
+                data: [5, 20, 36, 10, 10, 20]
+            }]
+        };
+        myChart2.setOption({
+            series : [
+                {
+                    name: '访问来源',
+                    type: 'pie',
+                    radius: '55%',
+                    data:[
+                        {value:235, name:'视频广告'},
+                        {value:274, name:'联盟广告'},
+                        {value:310, name:'邮件营销'},
+                        {value:335, name:'直接访问'},
+                        {value:400, name:'搜索引擎'}
+                    ]
+                }
+            ]
+        })
+        // 使用刚指定的配置项和数据显示图表。
+        myChart1.setOption(option);
+    </script>
+</body>
+</html>
