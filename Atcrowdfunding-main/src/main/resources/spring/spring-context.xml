@@ -40,7 +40,8 @@
 	<bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<!-- <property name="basePackage" value="com.atguigu.atcrowdfunding.manager.dao,com.atguigu.atcrowdfunding.potal.dao"/> -->
 		<property name="basePackage" value="com.atguigu.atcrowdfunding.*.dao"/>
-<!-- 	不配置也会自动寻找	<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property> -->
+	<!-- 不配置也会自动寻找 -->	
+		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
 	</bean>
 
 	<!-- 事务管理器 -->

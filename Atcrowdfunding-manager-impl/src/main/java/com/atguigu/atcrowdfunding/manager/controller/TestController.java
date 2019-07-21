@@ -18,4 +18,11 @@ public class TestController {
 		testService.query();
 		return "success";
 	}
+	@RequestMapping("/insert")
+	public String testInsert() {
+		
+		
+		testService.insert();
+		return "success";
+	}
 }

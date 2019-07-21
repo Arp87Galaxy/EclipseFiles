@@ -7,6 +7,13 @@
     <select id="query" resultType="com.atguigu.atcrowdfunding.bean.TManager">
         select * from t_manager;
     </select>
+    <insert id="insert">
+        insert into t_manager (
+            name
+        ) values (
+            #{name}
+        )
+    </insert>
 <!--   com.atguigu.atcrowdfunding.bean. -->
     <!--
     <select id="queryRolePermissionByUser" resultType="permission">
