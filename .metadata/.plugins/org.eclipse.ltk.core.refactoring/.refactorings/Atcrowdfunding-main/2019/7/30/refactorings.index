@@ -5,3 +5,8 @@
 1563703471968	Rename resource 'error.jsp'
 1563703643312	Move '404.jsp' to 'webapp'
 1563703854595	Copy file
+1563778242287	Move 'log4j.properties' to 'config'
+1563778304405	Move 'jdbc.properties' to 'resources'
+1563778345455	Move 'jdbc.properties' to 'config'
+1563778348347	Move 'log4j.properties' to 'resources'
+1563813493225	Delete element

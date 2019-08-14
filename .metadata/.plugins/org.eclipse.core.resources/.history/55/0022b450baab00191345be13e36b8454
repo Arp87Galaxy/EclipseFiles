@@ -1,8 +1,0 @@
-package com.atguigu.atcrowdfunding.manager.service;
-
-import com.atguigu.atcrowdfunding.bean.TManager;
-
-public interface TestService {
-	public void query();
-	public void insert(TManager tManager);
-}

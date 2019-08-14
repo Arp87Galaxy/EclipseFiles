@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-   404ERROR.
+   WEB-INF404ERROR.
 </body>
 </html>

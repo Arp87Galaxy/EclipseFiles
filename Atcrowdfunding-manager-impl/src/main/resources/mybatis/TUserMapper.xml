@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.atguigu.atcrowdfunding.manager.dao.TUserMapper">
+  <resultMap id="BaseResultMap" type="com.atguigu.atcrowdfunding.bean.TUser">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="loginacct" jdbcType="VARCHAR" property="loginacct" />
+    <result column="userpswd" jdbcType="CHAR" property="userpswd" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="createtime" jdbcType="CHAR" property="createtime" />
+  </resultMap>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from t_user
+    where id = #{id}
+  </delete>
+  <insert id="insert" parameterType="com.atguigu.atcrowdfunding.bean.TUser" useGeneratedKeys="true" keyProperty="id">
+    insert into t_user (id, loginacct, userpswd, 
+      username, email, createtime
+      )
+    values (#{id,jdbcType=INTEGER}, #{loginacct,jdbcType=VARCHAR}, #{userpswd,jdbcType=CHAR}, 
+      #{username,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, #{createtime,jdbcType=CHAR}
+      )
+  </insert>
+  <update id="updateByPrimaryKey" parameterType="com.atguigu.atcrowdfunding.bean.TUser">
+    update t_user
+    set loginacct = #{loginacct,jdbcType=VARCHAR},
+      userpswd = #{userpswd,jdbcType=CHAR},
+      username = #{username,jdbcType=VARCHAR},
+      email = #{email,jdbcType=VARCHAR},
+      createtime = #{createtime,jdbcType=CHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select id, loginacct, userpswd, username, email, createtime
+    from t_user
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select id, loginacct, userpswd, username, email, createtime
+    from t_user
+  </select>
+  <!--参数可以不写 但是为了方便阅读写上 小写map或者 java.util.Map都可以 -->
+  <select id="queryUserlogin" parameterType="map" resultMap="BaseResultMap">
+    select id, loginacct, userpswd, username, email, createtime
+    from t_user
+    where loginacct=#{loginacct} and userpswd=#{userpswd}
+  </select>
+  
+<!--   <select id="queryList" resultMap="BaseResultMap">
+    select id, loginacct, userpswd, username, email, createtime
+    from t_user
+    limit #{startIndex},#{pagesize}
+  </select>
+  
+  <select id="queryCount" resultType="int">
+    select count(*)
+    from t_user
+  </select> -->
+  <update id="updateUser" parameterType="com.atguigu.atcrowdfunding.bean.TUser">
+    update t_user
+    set loginacct = #{loginacct},
+      username = #{username},
+      email = #{email}
+    where id = #{id}
+  </update>
+ <select id="queryList" resultMap="BaseResultMap">
+    select id, loginacct, userpswd, username, email, createtime
+    from t_user 
+    <where>
+    	<if test="queryText!=null">loginacct like concat("%",#{queryText},"%") </if>
+    </where>
+    order by createtime DESC
+    limit #{startIndex},#{pagesize}
+  </select>
+  
+  <select id="queryCount" resultType="int"> 
+    select count(*)
+    from t_user
+    <where>
+    	<if test="queryText!=null">loginacct like concat("%",#{queryText},"%") </if>
+    </where>
+    order by createtime DESC
+  </select>
+  
+</mapper>

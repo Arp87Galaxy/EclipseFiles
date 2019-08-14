@@ -2,19 +2,14 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.atguigu.maven"/>
+			<item value="sss"/>
+			<item value="com.atguigu"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="Atcrowdfunding-main"/>
-			<item value="Atcrowdfunding-manager-impl"/>
-			<item value="Atcrowdfunding-manager-api"/>
-			<item value="Atcrowdfunding-potal-api"/>
-			<item value="Atcrowdfunding-potal-impl"/>
-			<item value="Atcrowdfunding-common"/>
-			<item value="Atcrowdfunding-bean"/>
-			<item value="Atcrowdfunding-parent"/>
+			<item value="sssss"/>
+			<item value="spring-annotation"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

@@ -52,5 +52,10 @@
 <workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1563708703858_13" label="Multiple Working Sets" name="Aggregate:Atcrowdfunding:Java Main Sources:Java Test Sources:JavaEE:JavaSE:">
 <workingSet IMemento.internal.id="Atcrowdfunding"/>
 </workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1565358714691_11" label="Multiple Working Sets" name="Aggregate:Atcrowdfunding:Java Main Sources:Java Test Sources:">
+<workingSet IMemento.internal.id="Atcrowdfunding"/>
+<workingSet IMemento.internal.id="Java Main Sources"/>
+<workingSet IMemento.internal.id="Java Test Sources"/>
+</workingSet>
 <mruList name="Atcrowdfunding"/>
 </workingSetManager>

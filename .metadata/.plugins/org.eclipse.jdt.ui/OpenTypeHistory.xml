@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=Atcrowdfunding-manager-api/src\/main\/java&lt;com.atguigu.atcrowdfunding.manager.service{TestService.java[TestService" modifiers="513" timestamp="1563700668578"/>
+<typeInfo handle="=Atcrowdfunding-main/D:\/编程Tools\/apache-tomcat-8.5.38\/lib\/servlet-api.jar&lt;javax.servlet(ServletContextListener.class[ServletContextListener" modifiers="1537" timestamp="1549338246000"/>
+<typeInfo handle="=Atcrowdfunding-main/D:\/编程Tools\/apache-tomcat-8.5.38\/lib\/servlet-api.jar&lt;javax.servlet(ServletContextAttributeListener.class[ServletContextAttributeListener" modifiers="1537" timestamp="1549338246000"/>
+<typeInfo handle="=Atcrowdfunding-common/C:\/Program Files\/Java\/jdk1.8.0_201\/jre\/lib\/rt.jar&lt;org.omg.SendingContext(RunTimeOperations.class[RunTimeOperations" modifiers="1537" timestamp="1554971769593"/>
+<typeInfo handle="=Atcrowdfunding-common/C:\/Program Files\/Java\/jdk1.8.0_201\/jre\/lib\/rt.jar&lt;org.omg.SendingContext(RunTime.class[RunTime" modifiers="1537" timestamp="1554971769593"/>
+<typeInfo handle="=Atcrowdfunding-common/C:\/Program Files\/Java\/jdk1.8.0_201\/jre\/lib\/rt.jar&lt;java.lang(RuntimeException.class[RuntimeException" modifiers="33" timestamp="1554971769593"/>
 </typeInfoHistroy>
